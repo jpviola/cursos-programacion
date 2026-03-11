@@ -138,6 +138,14 @@ button {
   margin-bottom: 1.5rem;
 }
 
+.section-lead {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  max-width: 52rem;
+  margin-top: -0.6rem;
+  margin-bottom: 1.5rem;
+}
+
 .hero {
   position: relative;
   padding-top: 4.5rem;
@@ -197,6 +205,11 @@ button {
   color: var(--color-muted);
 }
 
+.hero-note-danger {
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
 .hero-side {
   background: radial-gradient(circle at top left, rgba(0, 229, 255, 0.32), rgba(0, 6, 33, 0.95));
   border-radius: var(--radius-lg);
@@ -206,6 +219,15 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
+}
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
 }
 
 .hero-badge {
@@ -256,6 +278,52 @@ button {
 .card p {
   font-size: 0.9rem;
   color: var(--color-muted);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.gallery-item {
+  display: block;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: rgba(1, 12, 40, 0.9);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.42);
+  transition: transform 0.14s ease-out, box-shadow 0.14s ease-out, border-color 0.14s ease-out;
+}
+
+.gallery-item:hover,
+.gallery-item:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(0, 229, 255, 0.35);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.video-card {
+  background: rgba(1, 12, 40, 0.9);
+  border-radius: var(--radius-md);
+  padding: 1.1rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.42);
+}
+
+.promo-video {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .details-grid {
@@ -445,10 +513,6 @@ button {
   color: var(--color-muted);
 }
 
-.hero-note span {
-  color: var(--color-danger);
-}
-
 .danger-text {
   color: var(--color-danger);
 }
@@ -472,7 +536,8 @@ button {
   }
 
   .grid-3,
-  .details-grid {
+  .details-grid,
+  .gallery-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
