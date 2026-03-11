@@ -310,22 +310,6 @@ button {
   object-fit: cover;
 }
 
-.video-card {
-  background: rgba(1, 12, 40, 0.9);
-  border-radius: var(--radius-md);
-  padding: 1.1rem;
-  border: 1px solid var(--color-border);
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.42);
-}
-
-.promo-video {
-  width: 100%;
-  display: block;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(0, 0, 0, 0.6);
-}
-
 .details-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
