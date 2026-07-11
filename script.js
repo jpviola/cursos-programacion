@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       evento.preventDefault();
       const destino = enlace.getAttribute("href");
       if (!destino) return;
+      cerrarMenu();
       scrollSuave(destino);
     });
   });
@@ -37,6 +38,32 @@ document.addEventListener("DOMContentLoaded", function () {
   if (volverArriba) {
     volverArriba.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  const navToggle = document.querySelector(".nav-toggle");
+  const header = document.querySelector(".header");
+
+  function cerrarMenu() {
+    if (!header) return;
+    header.classList.remove("nav-open");
+    if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+  }
+
+  if (navToggle && header) {
+    navToggle.addEventListener("click", function () {
+      const abierto = header.classList.toggle("nav-open");
+      navToggle.setAttribute("aria-expanded", abierto ? "true" : "false");
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!header.contains(e.target)) {
+        cerrarMenu();
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") cerrarMenu();
     });
   }
 });
