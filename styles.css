@@ -510,6 +510,386 @@ button {
   gap: 0.6rem;
 }
 
+.curso-card-header {
+  position: relative;
+}
+
+.urgency-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: linear-gradient(135deg, #ff4444, #ff6b6b);
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 68, 68, 0.4);
+  animation: urgencyPulse 2s ease-in-out infinite;
+}
+
+.urgency-badge.urgency-hot {
+  background: linear-gradient(135deg, #ff6b35, #ff9f1c);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+}
+
+.urgency-badge.urgency-new {
+  background: linear-gradient(135deg, #00b4d8, #0096c7);
+  box-shadow: 0 4px 12px rgba(0, 180, 216, 0.4);
+  animation: none;
+}
+
+@keyframes urgencyPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.cupos-disponibles {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.cupos-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+
+.cupos-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-warm));
+  border-radius: 3px;
+  transition: width 1s ease-out;
+}
+
+.cupos-text {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.cupos-text strong {
+  color: var(--color-accent);
+}
+
+.countdown-banner {
+  background: linear-gradient(135deg, rgba(255, 90, 54, 0.15), rgba(255, 203, 71, 0.1));
+  border: 1px solid rgba(255, 90, 54, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.countdown-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.countdown-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.countdown-timer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-number {
+  font-family: "Space Grotesk", monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.countdown-text {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+  margin-top: 0.2rem;
+}
+
+.countdown-sep {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent-warm);
+  margin-bottom: 1rem;
+}
+
+.hero-urgency {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.urgency-icon {
+  font-size: 1.2rem;
+  animation: fireFlicker 1.5s ease-in-out infinite;
+}
+
+@keyframes fireFlicker {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.1) rotate(-5deg); }
+  75% { transform: scale(1.1) rotate(5deg); }
+}
+
+.btn-pulse {
+  animation: btnPulse 2s ease-in-out infinite;
+}
+
+@keyframes btnPulse {
+  0%, 100% { box-shadow: 0 14px 40px rgba(255, 90, 54, 0.35); }
+  50% { box-shadow: 0 14px 50px rgba(255, 90, 54, 0.6), 0 0 30px rgba(255, 90, 54, 0.4); }
+}
+
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 90, 54, 0.3), transparent);
+  transform: rotate(45deg);
+  animation: glowSweep 3s ease-in-out infinite;
+}
+
+@keyframes glowSweep {
+  0% { transform: translateX(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) rotate(45deg); }
+}
+
+.inscripcion-urgency {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent-warm);
+  margin-bottom: 0.8rem;
+}
+
+.inscripcion-note {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+}
+
+.precio-urgencia {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.precio-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: linear-gradient(135deg, rgba(255, 90, 54, 0.2), rgba(255, 203, 71, 0.15));
+  border: 1px solid rgba(255, 90, 54, 0.4);
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent-warm);
+}
+
+.tech-showcase {
+  background: rgba(24, 13, 9, 0.9);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-md);
+  transition: transform 0.3s var(--ease-spring), background 0.2s ease-out;
+}
+
+.tech-item:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.tech-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  margin-bottom: 0.3rem;
+}
+
+.tech-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.tech-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.tech-desc {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.skill-card {
+  background: rgba(24, 13, 9, 0.9);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.3s var(--ease-spring), border-color 0.25s ease-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 90, 54, 0.35);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.skill-card h4 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-text);
+}
+
+.skill-card p {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+.outcomes-box {
+  background: linear-gradient(135deg, rgba(255, 90, 54, 0.1), rgba(255, 203, 71, 0.08));
+  border: 1px solid rgba(255, 90, 54, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.8rem;
+}
+
+.outcomes-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.outcomes-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.outcomes-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+.outcome-check {
+  color: var(--color-accent-warm);
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.social-link.whatsapp-style {
+  background: linear-gradient(135deg, #15d072, #23e27e);
+  color: #021b09;
+}
+
+.cta-sticky-mobile {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 25;
+  background: linear-gradient(to top, rgba(26, 14, 10, 0.98), rgba(26, 14, 10, 0.95));
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--color-border);
+  padding: 0.75rem 1rem;
+}
+
+.cta-sticky-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-sticky-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
 .curso-card h3 {
   display: flex;
   align-items: center;
@@ -968,6 +1348,14 @@ button {
     grid-template-columns: minmax(0, 1fr);
   }
 
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .inscripcion-merged {
     flex-direction: column;
     align-items: flex-start;
@@ -1027,6 +1415,24 @@ button {
   .header-content {
     flex-wrap: nowrap;
     align-items: center;
+  }
+
+  .cta-sticky-mobile {
+    display: block;
+  }
+
+  body {
+    padding-bottom: 4rem;
+  }
+
+  .countdown-content {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .countdown-number {
+    font-size: 1.4rem;
+    min-width: 2.5rem;
   }
 }
 

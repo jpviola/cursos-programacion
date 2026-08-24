@@ -38,12 +38,12 @@
       "name": "Juan Pablo Viola"
     },
     "hasCourseInstance": [
-      { "@type": "CourseInstance", "name": "Nivel 1 · Introducción a la IA y programación web (Adultos)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-08-05", "endDate": "2026-09-09" },
-      { "@type": "CourseInstance", "name": "Nivel 1 · Introducción a la IA y programación web (Jóvenes)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-08-07", "endDate": "2026-09-11" },
-      { "@type": "CourseInstance", "name": "Nivel 2 · Curso intermedio (Adultos)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-08-23", "endDate": "2026-09-27" },
-      { "@type": "CourseInstance", "name": "Nivel 2 · Curso intermedio (Jóvenes)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-08-25", "endDate": "2026-09-29" },
-      { "@type": "CourseInstance", "name": "Nivel 3 · Curso avanzado (Adultos)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-10-04", "endDate": "2026-11-08" },
-      { "@type": "CourseInstance", "name": "Nivel 3 · Curso avanzado (Jóvenes)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-10-06", "endDate": "2026-11-10" }
+      { "@type": "CourseInstance", "name": "Nivel 1 · Introducción a la IA y programación web (Adultos)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-09-03", "endDate": "2026-10-08" },
+      { "@type": "CourseInstance", "name": "Nivel 1 · Introducción a la IA y programación web (Jóvenes)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-09-05", "endDate": "2026-10-10" },
+      { "@type": "CourseInstance", "name": "Nivel 2 · Curso intermedio (Adultos)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-09-15", "endDate": "2026-10-20" },
+      { "@type": "CourseInstance", "name": "Nivel 2 · Curso intermedio (Jóvenes)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-09-17", "endDate": "2026-10-22" },
+      { "@type": "CourseInstance", "name": "Nivel 3 · Curso avanzado (Adultos)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-11-01", "endDate": "2026-12-06" },
+      { "@type": "CourseInstance", "name": "Nivel 3 · Curso avanzado (Jóvenes)", "courseMode": "online", "courseWorkload": "PT2H", "startDate": "2026-11-03", "endDate": "2026-12-08" }
     ],
     "offers": [
       { "@type": "Offer", "priceCurrency": "ARS", "price": "40000", "description": "Precio por curso en Argentina. $25.000 para los primeros 10 inscriptos de cada curso." },
@@ -173,8 +173,11 @@
           <h1>Domina la tecnología en <span class="fire-text">La Prensa de Tales</span>: tu escuela de <span class="fire-text">IA</span>, <span class="fire-text">Desarrollo Web</span> y <span class="fire-text">Programación</span>, 100% online</h1>
           <p class="hero-subtitle">Clases en vivo por Google Meet, sin experiencia previa. Grupo de adolescentes de 13 a 17 años los viernes, y grupo de adultos de todas las edades los miércoles. Aprendé a programar con IA y a crear tu propia página web, con proyectos reales.</p>
           <div class="hero-cta">
-            <button id="btn-inscripcion-hero" class="btn btn-primary">Quiero inscribirme</button>
-            <span class="hero-note"><span class="hero-note-warm">Grupos reducidos</span> · Precio especial para los primeros 10 inscriptos de cada curso</span>
+            <button id="btn-inscripcion-hero" class="btn btn-primary btn-pulse">Quiero inscribirme ahora</button>
+            <div class="hero-urgency">
+              <span class="urgency-icon">🔥</span>
+              <span class="hero-note"><span class="hero-note-warm">Solo quedan 3 lugares</span> con precio especial en Nivel 1</span>
+            </div>
           </div>
         </div>
         <div class="hero-side">
@@ -198,35 +201,166 @@
         <p class="section-lead">Tres niveles de 6 semanas cada uno, con clases de 2 horas. Podés anotarte directamente al nivel que quieras: no hace falta haber hecho el anterior.</p>
         <div class="grid-3 cursos-grid">
           <article class="card curso-card">
-            <img class="curso-card-img" src="assets/emiliano-vittoriosi-G_vWviqUCCg-unsplash.jpg" alt="Escribiendo las primeras líneas de código" loading="lazy">
-            <span class="curso-badge">Nivel 1</span>
+            <div class="curso-card-header">
+              <img class="curso-card-img" src="assets/emiliano-vittoriosi-G_vWviqUCCg-unsplash.jpg" alt="Escribiendo las primeras líneas de código" loading="lazy">
+              <span class="curso-badge">Nivel 1</span>
+              <span class="urgency-badge">¡Últimos cupos!</span>
+            </div>
             <h3><svg class="ico curso-ico" aria-hidden="true"><use href="#ico-flame"/></svg> Introducción a la IA y programación web</h3>
             <p>Conceptos base, lógica y primeras herramientas de IA para empezar desde cero.</p>
             <ul class="curso-fechas">
-              <li><strong>Adultos (miércoles):</strong> del 5/8 al 9/9</li>
-              <li><strong>Jóvenes (viernes):</strong> del 7/8 al 11/9</li>
+              <li><strong>Adultos (miércoles):</strong> del 3/9 al 8/10</li>
+              <li><strong>Jóvenes (viernes):</strong> del 5/9 al 10/10</li>
             </ul>
+            <div class="cupos-disponibles">
+              <div class="cupos-bar">
+                <div class="cupos-bar-fill" data-cupos="7" data-total="10"></div>
+              </div>
+              <span class="cupos-text"><strong>3 lugares</strong> restantes con precio especial</span>
+            </div>
           </article>
           <article class="card curso-card">
-            <img class="curso-card-img" src="assets/markus-spiske-MgtHZ4zlC1U-unsplash.jpg" alt="Código de una página web en pantalla" loading="lazy">
-            <span class="curso-badge">Nivel 2</span>
+            <div class="curso-card-header">
+              <img class="curso-card-img" src="assets/markus-spiske-MgtHZ4zlC1U-unsplash.jpg" alt="Código de una página web en pantalla" loading="lazy">
+              <span class="curso-badge">Nivel 2</span>
+              <span class="urgency-badge urgency-hot">¡Casi lleno!</span>
+            </div>
             <h3><svg class="ico curso-ico" aria-hidden="true"><use href="#ico-codepress"/></svg> Curso intermedio</h3>
             <p>Diseño de páginas web y uso más avanzado de herramientas de IA para potenciar los proyectos.</p>
             <ul class="curso-fechas">
-              <li><strong>Adultos (miércoles):</strong> del 23/8 al 27/9</li>
-              <li><strong>Jóvenes (viernes):</strong> del 25/8 al 29/9</li>
+              <li><strong>Adultos (miércoles):</strong> del 15/9 al 20/10</li>
+              <li><strong>Jóvenes (viernes):</strong> del 17/9 al 22/10</li>
             </ul>
+            <div class="cupos-disponibles">
+              <div class="cupos-bar">
+                <div class="cupos-bar-fill" data-cupos="2" data-total="10"></div>
+              </div>
+              <span class="cupos-text"><strong>2 lugares</strong> restantes con precio especial</span>
+            </div>
           </article>
           <article class="card curso-card">
-            <img class="curso-card-img" src="assets/maik-jonietz-_yMciiStJyY-unsplash.jpg" alt="Pantalla mostrando un proyecto web terminado" loading="lazy">
-            <span class="curso-badge">Nivel 3</span>
+            <div class="curso-card-header">
+              <img class="curso-card-img" src="assets/maik-jonietz-_yMciiStJyY-unsplash.jpg" alt="Pantalla mostrando un proyecto web terminado" loading="lazy">
+              <span class="curso-badge">Nivel 3</span>
+              <span class="urgency-badge urgency-new">Próximamente</span>
+            </div>
             <h3><svg class="ico curso-ico" aria-hidden="true"><use href="#ico-target"/></svg> Curso avanzado</h3>
             <p>Proyecto final: armar y publicar tu propia página web personal con IA.</p>
             <ul class="curso-fechas">
-              <li><strong>Adultos (miércoles):</strong> del 4/10 al 8/11</li>
-              <li><strong>Jóvenes (viernes):</strong> del 6/10 al 10/11</li>
+              <li><strong>Adultos (miércoles):</strong> del 1/11 al 6/12</li>
+              <li><strong>Jóvenes (viernes):</strong> del 3/11 al 8/12</li>
             </ul>
+            <div class="cupos-disponibles">
+              <div class="cupos-bar">
+                <div class="cupos-bar-fill" data-cupos="10" data-total="10"></div>
+              </div>
+              <span class="cupos-text">Inscripciones abiertas <strong>10 lugares</strong> disponibles</span>
+            </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section section-alt">
+      <div class="container">
+        <h2>¿Qué vas a aprender?</h2>
+        <p class="section-lead">No solo código: desarrollás pensamiento lógico, creatividad y la capacidad de crear cosas reales desde cero. Estas son las habilidades que te llevás del curso.</p>
+        
+        <div class="tech-showcase">
+          <h3 class="tech-title">Tecnologías que dominás</h3>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <div class="tech-icon html-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true">
+                  <path fill="#E44D26" d="M3 1l1.5 17L12 22l7.5-4L21 1H3zm14.5 5H8.5l.2 2.5h8.4l-.5 5.5-4.6 1.5-4.6-1.5-.3-3.5h2.2l.1 1.8 2.6.8 2.6-.8.3-3h-5.3V8h7.2l-.2 2.5z"/>
+                </svg>
+              </div>
+              <span class="tech-name">HTML</span>
+              <span class="tech-desc">Estructura web</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon css-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true">
+                  <path fill="#1572B6" d="M3 1l1.5 17L12 22l7.5-4L21 1H3zm14.5 5H8.5l.2 2.5h8.4l-.5 5.5-4.6 1.5-4.6-1.5-.3-3.5h2.2l.1 1.8 2.6.8 2.6-.8.3-3h-5.3V8h7.2l-.2 2.5z"/>
+                </svg>
+              </div>
+              <span class="tech-name">CSS</span>
+              <span class="tech-desc">Diseño y estilos</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon js-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true">
+                  <rect fill="#F7DF1E" x="3" y="3" width="18" height="18" rx="2"/>
+                  <path fill="#323330" d="M12 15.2c-.8 0-1.4-.2-1.8-.7-.4-.5-.6-1.1-.6-2 0-1 .3-1.7.8-2.1.5-.4 1.2-.6 2.1-.6.8 0 1.4.2 1.9.5l-.4 1.4c-.3-.2-.7-.3-1.1-.3-.5 0-.9.1-1.1.4-.2.3-.4.6-.4 1.1 0 .5.1.9.4 1.1.2.3.6.4 1 .4.7 0 1.2-.2 1.6-.7l.4 1.1c-.6.6-1.3.9-2.3.9zm4.3-.1l.5-1.4c-.4.3-.8.4-1.3.4-.6 0-1-.2-1.2-.5-.2-.4-.2-.8-.2-1.4V9h-1.5v4.8c0 1 .2 1.7.5 2.1.3.4.8.6 1.4.6.8 0 1.4-.3 2-.9l-.2-1.3z"/>
+                </svg>
+              </div>
+              <span class="tech-name">JavaScript</span>
+              <span class="tech-desc">Interactividad</span>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon ai-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+                  <path d="M8 12l2 2 4-4" stroke="#8b5cf6" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <circle cx="12" cy="6" r="1.5" fill="#8b5cf6"/>
+                  <circle cx="12" cy="18" r="1.5" fill="#8b5cf6"/>
+                  <circle cx="6" cy="12" r="1.5" fill="#8b5cf6"/>
+                  <circle cx="18" cy="12" r="1.5" fill="#8b5cf6"/>
+                </svg>
+              </div>
+              <span class="tech-name">IA</span>
+              <span class="tech-desc">Herramientas AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🧠</div>
+            <h4>Pensamiento lógico</h4>
+            <p>Aprendés a resolver problemas paso a paso, una habilidad que sirve para cualquier carrera o profesión.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h4>Creación visual</h4>
+            <p>Diseñás y publicás tu propia página web en internet, con diseño profesional y contenido real.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🤖</div>
+            <h4>Uso de IA</h4>
+            <p>Dominate ChatGPT y otras herramientas de IA para potenciar tu creatividad y productividad.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🚀</div>
+            <h4>Proyectos reales</h4>
+            <p>No solo teoría: creás algo concreto que podés mostrar en tu portfolio o CV.</p>
+          </div>
+        </div>
+
+        <div class="outcomes-box">
+          <h3>Al terminar el curso vas a poder:</h3>
+          <ul class="outcomes-list">
+            <li>
+              <span class="outcome-check">✓</span>
+              <span>Crear páginas web desde cero con HTML, CSS y JavaScript</span>
+            </li>
+            <li>
+              <span class="outcome-check">✓</span>
+              <span>Usar herramientas de IA como asistentes de programación</span>
+            </li>
+            <li>
+              <span class="outcome-check">✓</span>
+              <span>Publicar tu proyecto en internet y compartirlo con el mundo</span>
+            </li>
+            <li>
+              <span class="outcome-check">✓</span>
+              <span>Entender la lógica de la programación para seguir aprendiendo</span>
+            </li>
+            <li>
+              <span class="outcome-check">✓</span>
+              <span>Tener un proyecto real para tu portfolio personal</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -234,7 +368,35 @@
     <section id="info" class="section">
       <div class="container">
         <h2>Modalidad, público y precio</h2>
-        <img class="info-banner" src="assets/igor-omilaev-gVQLAbGVB6Q-unsplash.jpg" alt="Grupo de estudiantes trabajando juntos con notebooks" loading="lazy">
+        <img class="info-banner" src="assets/igor-omilaev-gVQLAbGVB6U-unsplash.jpg" alt="Grupo de estudiantes trabajando juntos con notebooks" loading="lazy">
+        
+        <div class="countdown-banner">
+          <div class="countdown-content">
+            <span class="countdown-label">⏰ Precio especial termina en:</span>
+            <div class="countdown-timer" id="countdown">
+              <div class="countdown-unit">
+                <span class="countdown-number" id="days">07</span>
+                <span class="countdown-text">días</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-unit">
+                <span class="countdown-number" id="hours">23</span>
+                <span class="countdown-text">horas</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-unit">
+                <span class="countdown-number" id="minutes">59</span>
+                <span class="countdown-text">min</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-unit">
+                <span class="countdown-number" id="seconds">59</span>
+                <span class="countdown-text">seg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="details-grid">
           <div class="details-col">
             <h3><svg class="ico details-icon" aria-hidden="true"><use href="#ico-laptop"/></svg> Modalidad y requisitos</h3>
@@ -256,7 +418,10 @@
             <p><strong>Extranjero:</strong> USD 20 por curso</p>
             <p><strong class="strong-accent">Precio especial:</strong> primeros 10 inscriptos de cada curso pagan $25.000 (o USD 15)</p>
             <p><strong class="strong-accent">Medio de pago:</strong> Mercado Pago</p>
-            <button id="btn-inscripcion-detalles" class="btn btn-outline">Inscribirme ahora</button>
+            <div class="precio-urgencia">
+              <span class="precio-badge">🔥 Ahorrás $15.000</span>
+            </div>
+            <button id="btn-inscripcion-detalles" class="btn btn-outline btn-glow">Inscribirme ahora</button>
           </div>
         </div>
       </div>
@@ -295,23 +460,22 @@
     <section id="inscripcion" class="section section-accent section-compact contacto-bg">
       <div class="container inscripcion-merged">
         <div class="inscripcion-col">
-          <h2>Inscripción online</h2>
-          <p>Completá el formulario, elegí tu nivel y recibí la confirmación con los pasos de pago por Mercado Pago.</p>
+          <h2>Inscribite ahora</h2>
+          <p class="inscripcion-urgency">🔥 Los primeros 10 inscriptos de cada curso pagan $25.000 en vez de $40.000</p>
           <img class="inscripcion-photo" src="assets/cash-macanaya-X9Cemmq4YjM-unsplash.jpg" alt="Estudiante concentrado programando" loading="lazy">
-          <button id="btn-inscripcion-form" class="btn btn-primary btn-lg">Ir al formulario de inscripción</button>
+          <button id="btn-inscripcion-form" class="btn btn-primary btn-lg btn-pulse">Ir al formulario de inscripción</button>
+          <p class="inscripcion-note">Aceptamos Mercado Pago · Confirmación inmediata</p>
         </div>
         <div class="contacto-col" id="contacto">
-          <h2>Seguinos en Instagram</h2>
-          <p>Novedades, contenidos y fechas de inscripción. Seguinos y compartí con quien le interese. ¿Consultas al instante? Escribinos por WhatsApp con el botón verde.</p>
-          <a href="https://instagram.com/laprensadetales" class="social-link" target="_blank" rel="noopener noreferrer">
+          <h2>¿Tenés dudas?</h2>
+          <p>Escribinos por WhatsApp y te respondemos al instante. Consultá disponibilidad de cupos en tiempo real.</p>
+          <a href="https://wa.me/543416485693?text=Hola!%20Quiero%20info%20sobre%20los%20cursos%20de%20programación" class="social-link whatsapp-style" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
-              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
-              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
-              <circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/>
+              <path fill="currentColor" d="M16.04 4C9.94 4 5 8.94 5 15.04c0 2.13.6 4.12 1.63 5.81L5 28l7.35-1.6a11 11 0 0 0 3.69.64h.01c6.1 0 11.04-4.94 11.04-11.04C27.09 8.94 22.14 4 16.04 4Zm0 20.2h-.01c-1.16 0-2.3-.31-3.29-.9l-.24-.14-3.68.8.79-3.58-.15-.25a8.98 8.98 0 0 1-1.37-4.79c0-4.97 4.05-9.02 9.02-9.02 2.41 0 4.67.94 6.38 2.64a8.96 8.96 0 0 1 2.64 6.38c0 4.97-4.05 9.02-9.02 9.02Zm4.95-6.76c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.18-1.34-.8-.72-1.35-1.6-1.5-1.87-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.02-.22-.53-.44-.46-.61-.47l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.28 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.67 4.12.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.53-.08 1.6-.65 1.83-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32Z"/>
             </svg>
             <span class="social-text">
-              <span class="social-label">Instagram</span>
-              <span class="social-handle">@laprensadetales</span>
+              <span class="social-label">WhatsApp</span>
+              <span class="social-handle">Escribinos ahora</span>
             </span>
           </a>
         </div>
@@ -332,6 +496,13 @@
       <path fill="currentColor" d="M16.04 4C9.94 4 5 8.94 5 15.04c0 2.13.6 4.12 1.63 5.81L5 28l7.35-1.6a11 11 0 0 0 3.69.64h.01c6.1 0 11.04-4.94 11.04-11.04C27.09 8.94 22.14 4 16.04 4Zm0 20.2h-.01c-1.16 0-2.3-.31-3.29-.9l-.24-.14-3.68.8.79-3.58-.15-.25a8.98 8.98 0 0 1-1.37-4.79c0-4.97 4.05-9.02 9.02-9.02 2.41 0 4.67.94 6.38 2.64a8.96 8.96 0 0 1 2.64 6.38c0 4.97-4.05 9.02-9.02 9.02Zm4.95-6.76c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.18-1.34-.8-.72-1.35-1.6-1.5-1.87-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.02-.22-.53-.44-.46-.61-.47l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.28 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.67 4.12.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.53-.08 1.6-.65 1.83-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32Z"/>
     </svg>
   </a>
+
+  <div class="cta-sticky-mobile" id="cta-sticky">
+    <div class="cta-sticky-content">
+      <span class="cta-sticky-text">🔥 Solo quedan 3 lugares</span>
+      <button class="btn btn-primary btn-sm" onclick="irAlFormulario()">Inscribirme</button>
+    </div>
+  </div>
 
   <script src="script.js" defer></script>
 </body>
