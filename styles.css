@@ -643,6 +643,34 @@ button {
   gap: 0.5rem;
 }
 
+.hero-free-trial {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.free-trial-badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  background: linear-gradient(135deg, #15d072, #23e27e);
+  color: #021b09;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 12px rgba(21, 208, 114, 0.3);
+}
+
+.free-class-highlight {
+  background: linear-gradient(135deg, rgba(21, 208, 114, 0.15), rgba(35, 226, 126, 0.1));
+  border: 1px solid rgba(21, 208, 114, 0.3);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #23e27e;
+}
+
 .urgency-icon {
   font-size: 1.2rem;
   animation: fireFlicker 1.5s ease-in-out infinite;
