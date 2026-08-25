@@ -1,0 +1,44 @@
+LA PRENSA DE TALES - Escuela de IA y Desarrollo
+
+ULTIMO PASO PARA CONFIRMAR TU LUGAR
+
+Hola {{nombre}}!
+
+Gracias por anotarte a {{curso}}. Te guardamos el cupo por 48 horas.
+Para dejarlo confirmado, solo falta abonar la inscripcion.
+
+TU CURSO
+--------
+Curso:     {{curso}}
+Grupo:     {{grupo}}
+Horario:   {{dias_horario}}
+Fechas:    del {{fecha_inicio}} al {{fecha_fin}} (6 semanas)
+Modalidad: 100% online en vivo por Google Meet
+
+TOTAL A ABONAR: {{precio}} (precio de lista {{precio_lista}})
+Precio especial para los primeros 10 inscriptos.
+
+PAGAR CON MERCADO PAGO:
+{{link_pago}}
+
+Podes pagar con tarjeta de credito y debito, dinero en cuenta,
+transferencia o efectivo. El pago lo procesa Mercado Pago.
+
+Pagas desde el exterior? Link en dolares (USD {{precio_usd}}):
+{{link_pago_usd}}
+
+QUE PASA DESPUES DE PAGAR
+-------------------------
+1. Recibis el comprobante de Mercado Pago al instante.
+2. Te mandamos por mail el link de Google Meet y el material
+   de la primera clase.
+3. Te sumamos al grupo del curso para avisos y consultas.
+
+DUDAS ANTES DE PAGAR?
+Escribinos por WhatsApp al +54 341 648-5693
+{{link_whatsapp}}
+
+--
+La Prensa de Tales - Cursos online en vivo de programacion web e IA
+https://jpviola.github.io/cursos-programacion/
+Darte de baja: {{link_baja}}

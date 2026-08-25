@@ -1,0 +1,20 @@
+[
+  {
+    "email": "alumno@ejemplo.com",
+    "nombre": "Sofía",
+    "curso": "Nivel 1 · Introducción a la IA y programación web",
+    "grupo": "jovenes",
+    "fecha_inicio": "5/9",
+    "fecha_fin": "10/10"
+  },
+  {
+    "email": "otro@ejemplo.com",
+    "nombre": "Martín",
+    "curso": "Nivel 2 · Curso intermedio",
+    "grupo": "adultos",
+    "fecha_inicio": "15/9",
+    "fecha_fin": "20/10",
+    "precio": "$40.000",
+    "precio_lista": ""
+  }
+]
